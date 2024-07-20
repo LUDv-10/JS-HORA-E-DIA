@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+.Images IMG {
+  background-color: rgb(255, 255, 255);
+  width: 190px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px 5px rgba(184, 184, 184, 0.4);
+}
+
+.Dia p {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Data p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+.Horario p {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Hora {
+  display: flex;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#fundo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 260px 150px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 18px;
+  box-shadow: 0px 0px 15px 5px rgba(184, 184, 184, 0.4);
+}
+
+.Relogio {
+  display: flex;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Relogio span {
+  font-size: 60px;
+  display: flex;
+  color: rgb(134, 134, 134);
+  align-items: center;
+  gap: 10px;
+}
+
+.Relogio span:not(:last-child)::after {
+  content: ":";
+  margin-bottom: 15px;
+  color: rgba(0, 176, 189, 0.603);
+}
