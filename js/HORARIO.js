@@ -5,14 +5,15 @@ function Horario() {
 
   if (hora < 12) {
     document.getElementById("Time").innerHTML = "Bom dia!";
+    document.getElementById("Time").style.color = "#ff9900";
     Image.src = "IMAGENS/sol.png";
-    fundo.style.backgroundColor = "#ff9100";
   } else if (hora < 18) {
     document.getElementById("Time").innerHTML = "Boa tarde!";
+    document.getElementById("Time").style.color = "#ffbf5e";
     Image.src = "IMAGENS/por-do-sol.png";
-    fundo.style.backgroundColor = "#ffc578";
   } else {
     document.getElementById("Time").innerHTML = "Boa noite!";
+    document.getElementById("Time").style.color = "#64a7c4";
     Image.src = "IMAGENS/lua.png";
   }
 }
