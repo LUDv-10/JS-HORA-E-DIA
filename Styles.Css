@@ -9,10 +9,17 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-attachment: fixed;
+  background-color: rgb(63, 94, 251);
+  background-image: linear-gradient(
+    180deg,
+    rgba(63, 94, 251, 1) 37%,
+    rgba(252, 70, 107, 1) 100%
+  );
 }
 
 #fundo {
+  overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,22 +29,22 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 250px 180px;
-  background-color: rgb(255, 255, 255);
+  padding: 300px 180px;
+  background-color: rgba(255, 255, 255, 0.685);
   border-radius: 18px;
   box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.356);
 }
 
 .Images IMG {
-  background-color: rgb(255, 255, 255);
-  width: 190px;
+  background-color: rgba(255, 255, 255, 0.685);
+  width: 180px;
   position: absolute;
-  top: 8%;
+  top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 2px solid rgba(0, 0, 0, 0.075);
   border-radius: 100px;
-  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.356);
 }
 
 .Dia p {
@@ -45,7 +52,7 @@ body {
   top: 71%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 235px;
+  width: 261px;
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 40px;
@@ -68,7 +75,7 @@ body {
 }
 .Horario p {
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 250px;
@@ -97,7 +104,7 @@ body {
 .Relogio {
   display: flex;
   position: absolute;
-  top: 57%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   gap: 10px;
@@ -106,8 +113,10 @@ body {
 .Relogio span {
   font-size: 60px;
   display: flex;
+  height: 65px;
   color: rgb(0, 0, 0);
   gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .Relogio span:not(:last-child)::after {
